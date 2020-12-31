@@ -114,6 +114,10 @@ body {
 }
 }
 @media screen and (max-width: 430px){
+    .cont1 {
+        width:90vw;
+        height: 75vh;
+        }
 .forgt{
     font-size: 3vw;
 
