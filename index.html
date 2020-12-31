@@ -5,97 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN/SIGNUP FORM</title>
-    <style>
-        html,
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin: 0%;
-            background-color: rgba(128, 128, 128, 0.753);
-            padding: 0%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .cont1 {
-            text-align: center;
-            background: #fff;
-            box-shadow: 0px 4px 6px 4px;
-            width: 30vw;
-            height: 70vh;
-            position: absolute;
-            top: 20vh;
-            border-radius: 1vh;
-        }
-        .forgt{
-            display: inline;
-            text-align: center;
-            font-size: 1vw;
-
-}
-        #login,
-        #signup {
-            height: 6vh;
-            width: 15vw;
-            margin: 4vh 0 2vh 0;
-            outline: none;
-            border-radius: 1vh;
-            background-color: maroon;
-            color: white;
-            cursor: pointer;
-        }
-
-        #login:hover {
-            background-color: rgb(114, 161, 20);
-            color: white;
-            transition: ease-in .4s;
-        }
-
-        #signup:hover {
-            background-color: rgb(114, 161, 20);
-            color: white;
-            transition: ease-in .4s;
-        }
-
-        .inputstyle {
-            height: 5vh;
-            width: 20vw;
-            margin: 4vh 2vw 0vh 2vw;
-        }
-
-        #si {
-            position: relative;
-            top: -46vh;
-            left: 30vw;
-            display: none;
-        }
-
-        .btn {
-            height: 5vh;
-            width: 10vw;
-            cursor: pointer;
-            outline: none;
-            border-radius: 1vh;
-        }
-
-        #btn2 {
-            background-color: maroon;
-            color: white;
-        }
-
-        #logtxt {
-            display: block;
-        }
-
-        #signtxt {
-            display: none;
-        }
-
-        #ques {
-            font-size: 1vw;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -110,12 +20,12 @@
                     required>
             </div>
             <div class="pass">
-                <input class="inputstyle" type="password"  name="password" id="pas" placeholder="Enter password..."
+                <input class="inputstyle" type="password" name="password" id="pas" placeholder="Enter password..."
                     required>
             </div>
             <div class="forgt">
                 <a id="forgotpas" href="#">forgot password?</a>
-                <input type="checkbox"  id="sho" onclick = "show()">Show Password
+                <input type="checkbox" id="sho" onclick="show()">Show Password
             </div>
             <div class="sub">
                 <input type="submit" name="submit" id="login" value="Log in">
@@ -134,53 +44,14 @@
                 <input class="inputstyle" type="password" name="repassword" id="repassword"
                     placeholder="Re-enter password...." required>
             </div>
-            
+
             <div class="sub">
                 <input type="submit" name="submit" id="signup" value="Sign up">
             </div>
             <div id="exi" onclick="login()">Existing member?.. <a href="#">Log in</a></div>
         </form>
     </div>
-    <script>
-        const logtxt = document.getElementById("logtxt")
-        const btn1 = document.getElementById("btn1")
-        const btn2 = document.getElementById("btn2")
-        const signtxt = document.getElementById("signtxt")
-        const b = document.getElementById("log")
-        const a = document.getElementById("si")
-        function sign() {
-            a.style.left = "0vw";
-            a.style.top = "0vw";
-            b.style.display = "none";
-            a.style.display = "block";
-            logtxt.style.display = "none";
-            signtxt.style.display = "block";
-            btn1.style.backgroundColor = "maroon";
-            btn1.style.color = "white";
-            btn2.style.backgroundColor = "white";
-            btn2.style.color = "black";
-        }
-        function login() {
-            a.style.display = "none";
-            b.style.display = "block";
-            logtxt.style.display = "block";
-            signtxt.style.display = "none";
-            btn2.style.backgroundColor = "maroon";
-            btn2.style.color = "white";
-            btn1.style.backgroundColor = "white";
-            btn1.style.color = "black";
-        }
-            function show() {
-                var x = document.getElementById("pas");
-                if (x.type === "password") {
-                    x.type = "text";
-                } else {
-                    x.type = "password";
-                }
-            }
-
-
+    <script src="function.js">
     </script>
 </body>
-
 </html>
