@@ -87,3 +87,56 @@ body {
 #ques {
     font-size: 1vw;
 }
+@media screen and (max-width: 1174px){
+    .cont1 {
+    width:90vw;
+    }
+    #login,
+#signup {
+    height: 8vh;
+    width: 25vw;
+   }
+   .inputstyle {
+    height:6vh;
+    width: 35vw;
+}
+.btn {
+    height: 6vh;
+    width: 15vw;
+}
+.forgt{
+    font-size: 2vw;
+
+}
+#ques {
+    font-size: 2vw;
+}
+}
+@media screen and (max-width: 430px){
+.forgt{
+    font-size: 3vw;
+
+}
+#ques {
+    font-size: 3vw;
+}
+}
+@media screen and (max-width: 410px){
+    .cont1 {
+        width:90vw;
+        height: 75vh;
+        }
+        #login,
+    #signup {
+        height: 10vh;
+        width: 35vw;
+       }
+       .inputstyle {
+        height:8vh;
+        width: 45vw;
+    }
+    .btn {
+        height: 8vh;
+        width: 25vw;
+    }  
+}
