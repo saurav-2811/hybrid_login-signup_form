@@ -8,6 +8,7 @@ body {
     background-color: rgba(128, 128, 128, 0.753);
     padding: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
 }
 
 .cont1 {
@@ -123,6 +124,7 @@ body {
 }
 @media screen and (max-width: 410px){
     .cont1 {
+        top: 10vh;
         width:90vw;
         height: 75vh;
         }
